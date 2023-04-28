@@ -1,0 +1,102 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    top: 0%;
+    position: fixed;
+    z-index: 999;
+}
+
+.top-header {
+    background-color: #7D0300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.bottom-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+/* .logo {
+    /* Ajusta el tamaño y posición de tu logo según tus necesidades */
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+
+.menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+.menu li {
+    margin: 10px 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .top-header {
+        height: 60px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        transform: translateY(-100%);
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu.open {
+        transform: translateY(60%);
+    }
+
+    .menu li {
+        margin: 10px;
+    }
+}
