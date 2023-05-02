@@ -15,7 +15,10 @@ export const Header = () => {
         <div className='header'>
             <div className='top-header'>
                 <div className='logo'>
-                    {/* Aquí puedes poner tu logo */}
+                    <h1>
+                        <Link className='titulo' to='/'>MusicTix</Link>
+                    </h1>
+                    <img src="../fotos/logo.png"  className='logo-header' alt="logo"/>
                 </div>
             </div>
             <div className='bottom-header'>
@@ -27,19 +30,19 @@ export const Header = () => {
                 <nav className={`menu ${isOpen ? 'open' : ''}`}>
                     <ul className='flex-menu-header'>
                         <li>
-                            <Link to='/esdeveniments'>Eventos</Link>
+                            <Link className='titulo' to='/esdeveniments'>Eventos</Link>
                         </li>
                         <li>
-                            <Link to='/nosotros'>Sobre nosotros</Link>
+                            <Link className='titulo' to='/nosotros'>Sobre nosotros</Link>
                         </li>
                         <li>
-                            <Link to='/contacta'>Contacta</Link>
+                            <Link className='titulo' to='/contacta'>Contacta</Link>
                         </li>
                         <li>
-                            <Link to='/iniciar-sesion'>Iniciar sesión</Link>
+                            <Link className='titulo' to='/iniciar-sesion'>Iniciar sesión</Link>
                         </li>
                         <li>
-                            <Link to='/registrarse'>Registrarse</Link>
+                            <Link className='titulo' to='/registrarse'>Registrarse</Link>
                         </li>
                     </ul>
                 </nav>

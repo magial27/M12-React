@@ -41,8 +41,12 @@
 .foto_esdeveniment:hover {
     opacity: 0.5;
     transition: opacity 0.2s ease-in-out;   
-
 }
+.div-info-eve:hover+.foto_esdeveniment{
+    opacity: 0.5;
+    transition: opacity 0.2s ease-in-out;   
+}
+
 
 .foto_esdeveniment:hover+.div-info-eve {
     opacity: 1;

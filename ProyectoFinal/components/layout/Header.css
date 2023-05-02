@@ -28,8 +28,13 @@
     height: 80px;
 }
 
-/* .logo {
-    /* Ajusta el tamaño y posición de tu logo según tus necesidades */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+    
 
 .menu-toggle {
     display: none;
@@ -67,8 +72,20 @@
     text-decoration: none;
     color: white;
 }
+.logo-header{
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 70px;
+    height: 70px;
+}
+.titulo{
+    color: white;
 
-
+}
+.titulo:hover{
+    color: white;
+    
+}
 
 @media screen and (max-width: 768px) {
     .top-header {
@@ -99,4 +116,10 @@
     .menu li {
         margin: 10px;
     }
+    .logo-header{
+        margin-left: 10px;
+        width: 55px;
+        height: 55px;
+    }
+    
 }
