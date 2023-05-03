@@ -6,7 +6,7 @@ function EsdevenimentGrid({ esdeveniment }) {
 
 
     return (
-        // <Link  to={"/esdeveniment/" + esdeveniment.id}>
+        // <Link  to={"/esdeveniment/" + esdeveniment.id}></Link>
         <div className='evento-individual'>
             {/* <p>{esdeveniment.id}</p> */}
             <img src="./fotos/festival.jpg" className='foto_esdeveniment' alt="Foto esdeveniment" />

@@ -25,7 +25,8 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    height: 80px;
+    height: 50px;
+    border-bottom: 2px solid white;
 }
 
 .logo {
@@ -99,7 +100,7 @@
 
     .menu {
         position: absolute;
-        top: 0px;
+        top: -1;
         left: 0;
         width: 100%;
         background-color: black;
