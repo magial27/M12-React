@@ -1,29 +1,31 @@
+
 .home {
 	display: flex;
 	flex-direction: column;
 	background-color: rgb(0, 0, 0);
-	padding-top: 130px;
-	min-height: 83vh;
+	top: 130px;
+	height: auto;
 	width: 100%;
+	position: absolute;
+	
 }
 
 .video-home {
 	max-width: 100%;
 	opacity: 0.4;
-	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
-
 }
 
 .caja-inicio {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
 }
 
 .div_titulo {
 	position: absolute;
 	border: 2px solid rgb(186, 186, 186);
-	margin-top: 450px;
+	margin-top: 200px;
 	padding: 10px;
 	backdrop-filter: blur(30px);
 	max-width: 40%;
@@ -34,6 +36,24 @@
 	color: white;
 
 
+}
+
+.texto_caja{
+	color: white
+
+}
+
+.caja-abajo{
+	width: 100%;
+	z-index: 0;
+	border-top: 2px solid white;
+
+	
+}
+.foto-fondo{
+	width: 100%;
+	height: auto;
+	opacity: 0.3;
 }
 
 /* .cajas_informacion{
@@ -76,7 +96,7 @@ body {
 .page-content {
 	display: flex;
 	width: 100%;
-	margin-top: 1250px ;
+	margin-top: 1000px ;
 	font-family: var(--font-sans);
 	position: absolute;
 	flex-direction: row;
@@ -101,9 +121,10 @@ body {
 	align-items: flex-end;
 	overflow: hidden;
 	padding: 1rem;
-	width: 40%;
+	width: 30%;
 	text-align: center;
 	color: whitesmoke;
+	z-index: 9;
 	background-color: whitesmoke;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
@@ -142,7 +163,7 @@ body {
 }
 
 .card:nth-child(1):before {
-	background-image: url('../fotos/festival.jpg');
+	background-image: url('../fotos/festival3.jpeg');
 }
 
 .card:nth-child(2):before {

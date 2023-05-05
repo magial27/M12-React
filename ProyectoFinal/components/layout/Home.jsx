@@ -29,13 +29,17 @@ export const Home = () => {
                         </div>
                         <div class="card">
                             <div class="content">
-                                <h2 class="title">To The Beach</h2>
-                                <p class="copy">Plan your next beach trip with these fabulous destinations</p><button class="btn">View Trips</button>
+                                <h2 class="title">Els millors artistes </h2>
+                                <p class="copy">Podràs disfrutar dels millors artistes. Artises a nivell mundial. David Guetta, Oliver Heldens, Boris Brechja i molts més!!! </p><Link class="btn" to={"/esdeveniments"}>Tickets</Link>
                             </div>
                         </div>
                     </div>
                 </div>
-               
+                <div className="caja-abajo">
+                    <img src="../fotos/festival4.jpg" className='foto-fondo'/>
+
+                </div>
+
 
 
 
@@ -49,12 +53,3 @@ export const Home = () => {
         </>
     )
 }
-{/* <div className="cajas_informacion">
-                        <div>
-                            <img src="../fotos/et.jpeg" alt="" />
-                        </div> 
-                        <div>
-                            
-                            
-                        </div>  
-                    </div> */}
