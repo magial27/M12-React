@@ -1,11 +1,14 @@
 import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
+import EsdevenimentsGrid from '../../paginas/EsdevenimentsGrid'
+import EsdevenimentGrid from '../../paginas/EsdevenimentGrid'
+
 import './Home.css'
 
 
 
 
-export const Home = () => {
+export const Home = (esdeveniment) => {
     return (
         <>
             <div className="home">
@@ -21,13 +24,13 @@ export const Home = () => {
                             i comoditat des de la comoditat del teu propi habitatge. Uneix-te a la nostra comunitat i no et perdis cap espectacle musical!</p>
                     </div>
                     <div class="page-content">
-                        <div class="card">
+                        <div class="carta">
                             <div class="content">
                                 <h2 class="title">Entrades</h2>
                                 <p class="copy">Aqui podràs trobar tots els festivals posibles del sector. Ja sigui música electrònica, tecno, hardstyle i molt més!!!</p><Link class="btn" to={"/esdeveniments"}>Tickets</Link>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="carta">
                             <div class="content">
                                 <h2 class="title">Els millors artistes </h2>
                                 <p class="copy">Podràs disfrutar dels millors artistes. Artises a nivell mundial. David Guetta, Oliver Heldens, Boris Brechja i molts més!!! </p><Link class="btn" to={"/esdeveniments"}>Tickets</Link>
@@ -36,19 +39,48 @@ export const Home = () => {
                     </div>
                 </div>
                 <div className="caja-abajo">
-                    <img src="../fotos/festival4.jpg" className='foto-fondo'/>
+                    <div class="container-artistas">
+                        <div class="card-artista card-artista0">
+                            <div class="border">
+                                <h2 class="titulo_carta">Boris Brejcha</h2>
+                            </div>
+                        </div>
+                        <div class="card-artista card-artista1">
+                            <div class="border">
+                                <h2 class="titulo_carta">Oliver Heldens</h2>
+                            </div>
+                        </div>
+                        <div class="card-artista card-artista2">
+                            <div class="border">
+                                <h2 class="titulo_carta">Skrillex</h2>   
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="container-artistas2">
+                        <div class="card-artista card-artista3">
+                            <div class="border">
+                                <h2 class="titulo_carta">Carl Cox</h2>
+                            </div>
+                        </div>
+                        <div class="card-artista card-artista4">
+                            <div class="border">
+                                <h2 class="titulo_carta">Martin Garrix</h2>
+                            </div>
+                        </div>
+                        <div class="card-artista card-artista5">
+                            <div class="border">
+                                <h2 class="titulo_carta">Chris Stussy</h2>   
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+
+
+
 
                 </div>
-
-
-
-
-
-
-
-
-
-
             </div>
         </>
     )

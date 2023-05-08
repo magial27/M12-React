@@ -17,6 +17,7 @@ function EsdevenimentsGrid() {
         <div className='evento-flex'>
           {esdeveniments.map((esdeveniment) => (
             <EsdevenimentGrid key={esdeveniment.id} esdeveniment={esdeveniment}/>
+
           ))}
         </div>
     </div>
