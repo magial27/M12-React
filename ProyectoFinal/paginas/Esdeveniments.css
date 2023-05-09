@@ -1,29 +1,50 @@
 .pagina-eventos {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.445), rgba(26, 24, 25, 1)),
+        url('../../fotos/festival5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    top: 130px;
+    height: auto;
+    min-height: 86.3vh;
     width: 100%;
-    background-color: #000000;
-    padding-top: 500px;
-    min-height: 83vh;
+    position: absolute;
+    z-index: 0;
 
 }
 
 .evento-flex {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
+    z-index: 9;
+    position: absolute;
 }
 
+/* 
 .evento-individual {
-    width: 44%;
+    background-color: rgb(0, 0, 0) !important;
+    width: 80%;
     margin: 50px;
     height: auto;
+    min-height: 100px;
     color: #FFFFFF;
     background-color: transparent;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    border: 2px solid white;
+    
 }
+
+
 
 .foto_esdeveniment {
     max-width: 100%;
@@ -51,4 +72,159 @@
 .foto_esdeveniment:hover+.div-info-eve {
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
+} */
+.full {
+    width: 100%;
+}
+
+.m-eventList.m-eventList__list {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.m-eventItem {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: block;
+    float: left;
+    width: 100%;
+    min-height: 200px;
+}
+
+
+.m-eventItem__thumb {
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+    max-width: 230px;
+    opacity: 1;
+}
+
+.m-eventItem__thumb:hover {
+    opacity: 0.8;
+}
+
+.m-eventItem__thumb img {
+    width: 100%;
+    display: block;
+}
+
+.m-eventItem__info {
+    width: calc(100% - 430px);
+    padding: 20px;
+    position: absolute;
+    left: 230px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.m-eventItem__date {
+    color: #ee3b33;
+	font-family: 'Proxima Nova', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.07em;
+    line-height: 24px;
+    font-size: 20px;
+    position: absolute;
+    background: white;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0px;
+}
+
+.m-eventItem__title {
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.m-eventItem__title a {
+	font-family: 'Proxima Nova', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 0.04em;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-eventItem__title a:hover {
+    color: #ee3b33;
+}
+
+.m-eventItem__tagline {
+    margin: 0px;
+    padding: 0px;
+	font-family: 'Proxima Nova', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+
+.event-item-meta-data {
+	font-family: 'Proxima Nova', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 5px;
+    float: left;
+    position: absolute;
+    bottom: 0px;
+    left: 230px;
+    padding: 0px 20px;
+}
+
+.m-eventItem__buttons {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.m-eventItem__buttons a {
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+	font-family: 'Proxima Nova', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    display: block;
+    width: 153px;
+}
+
+.m-eventItem__buttons a.tickets {
+    color: white;
+    background: #ee3b33;
+}
+
+.m-eventItem__buttons a.tickets:hover {
+    background: #ff0b00;
+}
+
+.m-eventItem__buttons a.more {
+    color: white;
+    background: #2f3d4f;
+}
+
+.m-eventItem__buttons a.more:hover {
+    background: #445873;
+}
+
+.m-eventList .m-eventItem__buttons a.tickets+.more {
+    margin-top: 10px;
 }

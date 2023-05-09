@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { Header } from '../components/layout/Header'
 import { Home } from '../components/layout/Home'

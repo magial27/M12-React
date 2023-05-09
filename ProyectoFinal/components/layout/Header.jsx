@@ -30,19 +30,19 @@ export const Header = () => {
                 <nav className={`menu ${isOpen ? 'open' : ''}`}>
                     <ul className='flex-menu-header'>
                         <li>
-                            <Link className='titulo' to='/esdeveniments'>Esdeveniments</Link>
+                            <Link className='titulo-link' to='/esdeveniments'>Esdeveniments</Link>
                         </li>
                         <li>
-                            <Link className='titulo' to='/nosotros'>Sobre nosaltres</Link>
+                            <Link className='titulo-link' to='/nosotros'>Sobre nosaltres</Link>
                         </li>
                         <li>
-                            <Link className='titulo' to='/contacta'>Contacta</Link>
+                            <Link className='titulo-link' to='/contacta'>Contacta</Link>
                         </li>
                         <li>
-                            <Link className='titulo' to='/login'>Iniciar Sessió</Link>
+                            <Link className='titulo-link' to='/login'>Iniciar Sessió</Link>
                         </li>
                         <li>
-                            <Link className='titulo' to='/register'>Registrar-se</Link>
+                            <Link className='titulo-link' to='/register'>Registrar-se</Link>
                         </li>
                     </ul>
                 </nav>
