@@ -95,6 +95,10 @@ input {
 	margin: 8px 0;
 	width: 100%;
 }
+.titulo-login{
+	color: black;
+
+}
 
 .container {
 	background-color: #fff;

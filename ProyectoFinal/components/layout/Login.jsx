@@ -9,7 +9,7 @@ function Login() {
                 <div class="container" id="container">
                     <div class="form-container sign-in-container">
                         <form action="#">
-                            <h1>Inicia Sessió</h1>
+                            <h1 class="titulo-login">Inicia Sessió</h1>
                             <input type="email" placeholder="Email" />
                             <input type="password" placeholder="Password" />
                             <button className='boto'>Iniciar Sessió </button>

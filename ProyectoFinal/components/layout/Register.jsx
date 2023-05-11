@@ -8,7 +8,7 @@ function Register() {
             <div class="container" id="container">
                 <div class="form-container sign-in-container">
                     <form action="#">
-                        <h1>Registra't</h1>
+                        <h1 class="titulo-login">Registra't</h1>
                         <input type="name" placeholder="Name" />
                         <input type="email" placeholder="Email" />
                         <input type="password" placeholder="Password" />
