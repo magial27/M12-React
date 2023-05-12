@@ -202,7 +202,7 @@ body {
 	line-height: 1.35;
 }
 
-.btn {
+.boton-home {
 	cursor: pointer;
 	margin-top: 1.5rem;
 	padding: 0.75rem 1.5rem;
@@ -215,11 +215,11 @@ body {
 	border: none;
 }
 
-.btn:hover {
+.boton-home:hover {
 	background-color: #0d0d0d;
 }
 
-.btn:focus {
+.boton-home:focus {
 	outline: 1px dashed yellow;
 	outline-offset: 3px;
 }

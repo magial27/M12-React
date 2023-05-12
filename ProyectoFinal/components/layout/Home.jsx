@@ -27,13 +27,13 @@ export const Home = (esdeveniment) => {
                         <div class="carta">
                             <div class="content">
                                 <h2 class="title">Entrades</h2>
-                                <p class="copy">Aqui podràs trobar tots els festivals posibles del sector. Ja sigui música electrònica, tecno, hardstyle i molt més!!!</p><Link class="btn" to={"/esdeveniments"}>Tickets</Link>
+                                <p class="copy">Aqui podràs trobar tots els festivals posibles del sector. Ja sigui música electrònica, tecno, hardstyle i molt més!!!</p><Link class="boton-home" to={"/esdeveniments"}>Tickets</Link>
                             </div>
                         </div>
                         <div class="carta">
                             <div class="content">
                                 <h2 class="title">Els millors artistes </h2>
-                                <p class="copy">Podràs disfrutar dels millors artistes. Artises a nivell mundial. David Guetta, Oliver Heldens, Boris Brechja i molts més!!! </p><Link class="btn" to={"/esdeveniments"}>Tickets</Link>
+                                <p class="copy">Podràs disfrutar dels millors artistes. Artises a nivell mundial. David Guetta, Oliver Heldens, Boris Brechja i molts més!!! </p><Link class="boton-home" to={"/esdeveniments"}>Tickets</Link>
                             </div>
                         </div>
                     </div>
