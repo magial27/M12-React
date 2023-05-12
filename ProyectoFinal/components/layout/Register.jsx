@@ -16,6 +16,7 @@ function Register() {
                         <input type="telefon" placeholder="Telefón  " />
 
                         <button className='boto'>Registrar-se</button>
+                        <div className="desaparecer">Si ja tens compta inicia sessió<Link className='link-desaparecer'to={"/login"}>aquí</Link></div>
                     </form>
                 </div>
                 <div class="overlay-container">

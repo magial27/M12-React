@@ -22,7 +22,7 @@
 	justify-content: center;
 	position: relative;
 	border-bottom: 2px solid white;
-	
+
 }
 
 .div_titulo {
@@ -50,7 +50,7 @@
 	z-index: 0;
 	height: 1000px;
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.52), rgba(26, 24, 25, 0.73)),
-    url('../../fotos/festival4.jpg');
+		url('../../fotos/festival4.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -276,7 +276,7 @@ body {
 
 /**************************************************/
 
- .container-artistas {
+.container-artistas {
 	bottom: 35vh;
 	left: 30vh;
 	height: 30vh;
@@ -291,6 +291,7 @@ body {
 	margin: 0 auto;
 	position: absolute;
 }
+
 .container-artistas2 {
 	bottom: 18vh;
 	left: 30vh;
@@ -436,4 +437,84 @@ body {
 	margin-top: 300px;
 	opacity: 0;
 	transition: opacity 1s;
-} 
+}
+
+@media (max-width: 1400px) {
+	.home {
+		top: 111px;
+		height: auto;
+		width: 100%;
+	}
+
+	.video-home {
+		width: 100%;
+		height: 600px;
+		opacity: 0.4;
+	}
+
+	.div_titulo {
+		position: absolute;
+		margin-top: 30px;
+		width: 400px;
+		height: auto;
+		backdrop-filter: blur(10px);
+
+		max-width: 100%;
+	}
+
+	.titulo_caja {
+		font-family: 'Proxima Nova', sans-serif;
+		color: white;
+		font-size: 33px;
+
+
+	}
+
+	.texto_caja {
+		font-size: 20px;
+		color: white
+	}
+	.page-content {
+		width: 100%;
+		margin-top: 1350px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.carta {
+		width: 70%;
+		margin-bottom: 20px;
+	}
+	.caja-abajo {
+		
+		height: 2000px;
+		
+
+	}
+	.container-artistas {
+		bottom: 30px;
+		left: -10px;
+		height: 1200px;
+		width: 100%;
+		max-height: 100%;
+		max-width: 100%;
+		min-height: auto;
+		min-width: auto;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+		position: absolute;
+	}
+	
+	.container-artistas2 {
+
+		display: none;
+		
+	}
+
+	.card-artista {
+		margin: 20px;
+	}
+}

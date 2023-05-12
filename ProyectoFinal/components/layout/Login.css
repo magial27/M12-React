@@ -275,3 +275,35 @@ footer a {
     color: #3c97bf;
     text-decoration: none;
 }
+.desaparecer{
+	margin-top: 10px;
+	color: black;
+	display: none;
+}
+.link-desaparecer{
+	margin-left: 3px;
+}
+
+@media (max-width: 1400px) {
+	.desaparecer{
+		display: block;
+	}
+
+	.fondo{
+		height: 900px;
+
+	}
+	.container {
+		width: 80%;
+		min-height: 480px;
+		top: 20%;
+		margin-left: 40px;
+		left: 0;
+	}
+
+	.sign-in-container {
+		left: 0;
+		width: 100%;
+		z-index: 800;
+	}
+}

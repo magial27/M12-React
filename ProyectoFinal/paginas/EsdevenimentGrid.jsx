@@ -30,7 +30,7 @@ function EsdevenimentGrid({ esdeveniment }) {
 
                         <div class="m-eventItem__buttons show-list">
 
-                            <a target="_blank" class="tickets onsalenow ">Buy Tickets</a><a class="more m-eventItem__buttons-hide" title="More Info"><Link  class="more m-eventItem__buttons-hide" to={"/esdeveniment/" + esdeveniment.id}>More Info</Link></a>
+                            <a target="_blank" class="tickets onsalenow ">Buy Tickets</a><Link  class="more m-eventItem__buttons-hide" to={"/esdeveniment/" + esdeveniment.id}>More Info</Link>
                         </div>
                     </div>
 

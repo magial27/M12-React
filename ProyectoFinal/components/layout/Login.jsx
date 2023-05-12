@@ -13,6 +13,7 @@ function Login() {
                             <input type="email" placeholder="Email" />
                             <input type="password" placeholder="Password" />
                             <button className='boto'>Iniciar Sessió </button>
+                            <div className="desaparecer">Si encara no tens compta creala <Link className='link-desaparecer'to={"/register"}>aquí</Link></div>
                         </form>
                     </div>
                     <div class="overlay-container">
