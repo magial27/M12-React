@@ -6,13 +6,11 @@ import Player from "@madzadev/audio-player";
 import "@madzadev/audio-player/dist/index.css";
 
 function Esdeveniment() {
-    // const esdeveniment =
-    // {
-    //     id: 1, image: '../fotos/festival5.jpg',
-    //     nombre: 'TomorrowLand', artista: 'Chris Stussy', descripcio: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
-    //     preu: 20, data_inici: '17 de Juny', data_final: '23 de Juny', lloc: 'Bèlgica', aforo: 5000000
-    // };
+    
     const [esdeveniment, setEsdeveniment] = useState([]);
+    const [artist, setArtist] = useState([]);
+    const [artistId, setArtistId] = useState(null);
+
     const { id } = useParams();
     const getEvents = async (e) => {
         try {
@@ -28,27 +26,56 @@ function Esdeveniment() {
         })
           const resposta = await data.json();
           console.log(resposta);
-          if (resposta.success == true )
-          {
+          if (resposta.success === true) {
             setEsdeveniment(resposta.data);
-            // setAuthToken(authToken);  
-            console.log(resposta.data); 
-    
-           
-          }else{
-            console.log("La resposta no ha triomfat");
-    
-          }            
+            setArtistId(resposta.data.artist_id);
+            console.log(resposta.data);
+          } else {
+            console.log("La respuesta no ha triomfat");
+          }
+                    
           
         } catch {
           console.log("Error");
           console.log("catch");
         }
       };
+
+    const getArtists = async (e) => {
+        try {
+          const data = await fetch("http://127.0.0.1:8000/api/artists/" + artistId, {
+            headers: {
+              "Accept": "application/json",
+              "Content-Type": "application/json",
+              "Authorization": 'Bearer ',
+            },
+            method: "GET",
+          });
+      
+          const resposta = await data.json();
+          console.log(resposta);
+          if (resposta.success === true) {
+            setArtist(resposta.data);
+            console.log(resposta.data);
+          } else {
+            console.log("La resposta no ha triomfat");
+          }
+        } catch {
+          console.log("Error");
+        }
+      };
+      
     
-      useEffect(()=>{
+      useEffect(() => {
         getEvents();
-    }, [])
+      }, []);
+      
+      useEffect(() => {
+        if (artistId !== null) {
+          getArtists();
+        }
+      }, [artistId]);
+      
     const tracks = [
         {
             url: "https://audioplayer.madza.dev/Madza-Chords_of_Life.mp3",
@@ -103,7 +130,7 @@ function Esdeveniment() {
                                 </div>
                                 <div class="section-fluid desc-sec accor-2">
                                     <div class="section-inline">
-                                        <p>DJ's: <span>{esdeveniment.artist_id}</span></p>
+                                        <p>DJ: <span>{artist.name}</span></p>
                                         <p><span>{esdeveniment.capacity}</span> Pers MÁX</p>
                                         <p>Data Inici: <span>{esdeveniment.start_date}</span></p>
                                         <p>Data Final: <span>{esdeveniment.end_date}</span></p>
