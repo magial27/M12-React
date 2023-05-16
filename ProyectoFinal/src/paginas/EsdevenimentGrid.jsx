@@ -1,9 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Esdeveniments.css'
 import { Link } from "react-router-dom";
 
 function EsdevenimentGrid({ esdeveniment }) {
 
+    const [imageExists, setImageExists] = useState(false);
+
+
+
+    function checkImageExists(imageUrl) {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+          img.onload = () => resolve(true);
+          img.onerror = () => resolve(false);
+          img.src = imageUrl;
+        });
+      }
+      
+
+
+      useEffect(() => {
+        checkImageExists(esdeveniment.filepath)
+          .then(exists => setImageExists(exists));
+      }, [esdeveniment.filepath]);
 
     return (
 
@@ -11,18 +30,26 @@ function EsdevenimentGrid({ esdeveniment }) {
             <div class="m-eventList m-eventList__list event_list">
                 <div class="m-eventList__wrapper list" id="list">
                     <div class="m-eventItem featured clearfix">
-                        <div class="m-eventItem__thumb thumb">
-                            <a href="#" title="More Info">
-                                <img src={esdeveniment.filepath}/> 
-                            </a>
-                        </div>
+                    <div className="m-eventItem__thumb thumb">
+                        <a href={`/esdeveniments/${esdeveniment.id}`} title="More Info">
+                        {imageExists ? (
+      <img src={esdeveniment.filepath} alt="Event" />
+    ) : (
+      <img
+        src="https://ined21.com/wp-content/uploads/2020/11/Eventos-musicales.jpg"
+        alt="Alternative Event"
+      />
+    )}
+                        </a>
+                    </div>
+
 
                         <div class="m-eventItem__info info clearfix">
                             <div class="m-eventItem__date date">
                                 <span class="m-date__rangeFirst"><span class="m-date__month">{esdeveniment.start_date} - {esdeveniment.end_date}</span></span>
                             </div>
                             <h3 class="m-eventItem__title m-eventItem__title-withTagline">
-                                <a href="#" title="More Info">{esdeveniment.name}</a>
+                                <a href={`/esdeveniments/${esdeveniment.id}`} title="More Info">{esdeveniment.name}</a>
                             </h3>
                             <h4 class="m-eventItem__tagline"> Aforament : {esdeveniment.capacity}</h4>
                         </div>

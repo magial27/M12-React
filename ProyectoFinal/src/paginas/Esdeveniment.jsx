@@ -6,6 +6,19 @@ import Player from "@madzadev/audio-player";
 import "@madzadev/audio-player/dist/index.css";
 
 function Esdeveniment() {
+
+    const [imageExists, setImageExists] = useState(false);
+
+
+
+    function checkImageExists(imageUrl) {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+          img.onload = () => resolve(true);
+          img.onerror = () => resolve(false);
+          img.src = imageUrl;
+        });
+      }
     
     const [esdeveniment, setEsdeveniment] = useState([]);
     const [artist, setArtist] = useState([]);
@@ -75,6 +88,11 @@ function Esdeveniment() {
           getArtists();
         }
       }, [artistId]);
+
+      useEffect(() => {
+        checkImageExists(esdeveniment.filepath)
+          .then(exists => setImageExists(exists));
+      }, [esdeveniment.filepath]);
       
     const tracks = [
         {
@@ -142,12 +160,25 @@ function Esdeveniment() {
                         <div class="info-wrap">
                             <a href="#" class="btn"><span class="icon">🛒</span> Comprar Entrades</a>
                         </div>
-                        <div class="img-wrap"><img class="imagen_show" src={esdeveniment.filepath} alt="" /></div>
+                        <div class="img-wrap">
+
+
+                            {imageExists ? (
+                                <img src={esdeveniment.filepath} alt="Event" />
+                                ) : (
+                                <img
+                                    src="https://ined21.com/wp-content/uploads/2020/11/Eventos-musicales.jpg"
+                                    alt="Alternative Event"
+                                />
+                                )}
+                            
+                            
+                            </div>
 
                     </div>
                 </div>
                 <div className="segunda-parte">
-                    <h1>Llista reprodcucció - {esdeveniment.artist_id}</h1>
+                    <h1>Llista reprodcucció - {artist.name}</h1>
                     <br></br>
                     <div className="reproductor">
                         <Player
