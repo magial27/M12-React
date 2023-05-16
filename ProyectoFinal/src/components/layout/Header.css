@@ -99,15 +99,37 @@
     
 }
 
+.login{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 10px;
+    list-style: none;
 
-@media screen and (max-width: 768px) {
+}
+.login li{
+    margin: 10px;
+}
+
+@media screen and (max-width: 980px) {
+    .login li .titulo-link{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 790px) {
     .top-header {
         height: 60px;
+    }
+    .login li .titulo-link{
+        font-size: 18px;
     }
 
     .menu-toggle {
         display: flex;
         flex-direction: column;
+        position: absolute;
+        left: 10px;
     }
 
     .menu {

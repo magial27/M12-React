@@ -5,6 +5,7 @@ import { Home } from './components/layout/Home'
 import Login from './auth/Login'
 import Register from './auth/Register'
 import Esdeveniment from './paginas/Esdeveniment'
+import Artista from './paginas/Artista'
 
 import EsdevenimentsGrid from './paginas/EsdevenimentsGrid'
 import { Route, Routes } from 'react-router-dom'
@@ -39,6 +40,8 @@ function App() {
         <Route path="/login" element={ <><Header/><Login /></> } /> 
         <Route path="/register" element={ <><Header/><Register /></> } /> 
         <Route path="/esdeveniments/:id" element={ <><Header/><Esdeveniment /></> } /> 
+        <Route path="/artistes" element={ <><Header/><Artista /></> } /> 
+
 
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/success" element={<Success />} />
