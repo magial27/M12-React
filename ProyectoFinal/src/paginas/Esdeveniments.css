@@ -188,6 +188,7 @@
 
 .m-eventItem__buttons {
     position: absolute;
+    z-index: 50;
     right: 0px;
     top: 50%;
     transform: translateY(-50%);
@@ -205,6 +206,7 @@
     text-align: center;
     display: block;
     width: 153px;
+    z-index: 50;
 }
 
 .m-eventItem__buttons a.tickets {

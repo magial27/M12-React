@@ -93,7 +93,11 @@ export const Header = () => {
                         // Si el usuario está autenticado, mostramos el enlace de Logout
                         <>
                         <li className='titulo-link' onClick={logout}>Logout</li>
-                        <li className='titulo-link'>{usuari}</li>
+                        {/* <li className='titulo-link'>{usuari}</li> */}
+                        <li>
+                        <Link className='titulo-link' to='/user'>{usuari}</Link>
+
+                        </li>
                         </>
                         ) : (
                         // Si el usuario no está autenticado, mostramos los enlaces de Login y Register
