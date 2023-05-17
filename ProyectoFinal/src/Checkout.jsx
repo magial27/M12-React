@@ -4,12 +4,19 @@ import { loadStripe } from "@stripe/stripe-js";
 import CardIcon from "../images/credit-card.svg";
 import ProductImage from "../images/product-image.jpg";
 
+// import process from "process";
+
 import "../styles.css";
 
 let stripePromise;
 
+// import dotenv from "dotenv";
+// dotenv.config();
+
+
 const getStripe = () => {
   if (!stripePromise) {
+    console.log(process.env.REACT_APP_STRIPE_KEY)
     stripePromise = loadStripe(process.env.REACT_APP_STRIPE_KEY);
   }
 

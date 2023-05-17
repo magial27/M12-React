@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom';
-import '../paginas/Esdeveniment.css'
+import './Esdeveniment.css'
 import Player from "@madzadev/audio-player";
 import "@madzadev/audio-player/dist/index.css";
 
@@ -158,7 +158,7 @@ function Esdeveniment() {
                         </div>
 
                         <div class="info-wrap">
-                            <a href="#" class="btn"><span class="icon">🛒</span> Comprar Entrades</a>
+                            <a href="/checkout" class="btn"><span class="icon">🛒</span> Comprar Entrades</a>
                         </div>
                         <div class="img-wrap">
 
