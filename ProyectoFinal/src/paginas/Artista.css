@@ -1,0 +1,300 @@
+.fondo-artistes {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.199), rgba(26, 24, 25, 0.432)),
+        url('../../fotos/festival7.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    top: 130px;
+    height: auto;
+    min-height: 86.3vh;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+html {
+    box-sizing: border-box;
+    color: #b9bcbd;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #191e20;
+}
+
+p {
+    font-size: 87.5%;
+    font-weight: 300;
+    margin-bottom: 1.375em;
+}
+
+.artist-card {
+    background-color: #2d3638;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 700px) {
+    .artist-card {
+        flex-direction: row;
+    }
+}
+
+.artist-photo1 {
+    background: url('https://www.amsterdam-dance-event.nl/uploads/images/artists-speakers/_900xAUTO_crop_center-center_none/000012710012.JPG');
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    min-height: 250px;
+}
+
+@media screen and (min-width: 700px) {
+    .artist-photo1 {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        min-height: none;
+        width: 50%;
+    }
+}
+
+.artist-photo2 {
+    background: url('https://cdn.wegow.com/media/artists/boris-brejcha/boris-brejcha-1540991098.7.jpg');
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    min-height: 250px;
+}
+
+@media screen and (min-width: 700px) {
+    .artist-photo2 {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        min-height: none;
+        width: 50%;
+    }
+}
+.artist-photo3 {
+    background: url("https://media.resources.festicket.com/image/300x300/center/top/filters:quality(70)/www/artists/OliverHeldens_New2.jpg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    min-height: 250px;
+}
+
+@media screen and (min-width: 700px) {
+    .artist-photo3 {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        min-height: none;
+        width: 50%;
+    }
+}
+
+.artist-photo4 {
+    background: url("https://www.nme.com/wp-content/uploads/2023/01/Skrillex2-press-2023.jpeg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    min-height: 250px;
+}
+
+@media screen and (min-width: 700px) {
+    .artist-photo4 {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        min-height: none;
+        width: 50%;
+    }
+}
+
+.artist-photo5 {
+    background: url("https://i.guim.co.uk/img/media/cee3639f3c638a222e7dceb749e79a5b16b93183/0_550_8256_4954/master/8256.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=64d1ed16f83e08ef2ab9fdb2c0354da3");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    min-height: 250px;
+}
+
+@media screen and (min-width: 700px) {
+    .artist-photo5 {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        min-height: none;
+        width: 50%;
+    }
+}
+
+.artist-photo6 {
+    background: url("https://yt3.googleusercontent.com/in7ji16oeon_ypiAMeH-ZdTWSaIC54yZqMsFg0X3uhTBk4MDCuIkRf6TIoQQCqjl20DSdakhSQ=s900-c-k-c0x00ffffff-no-rj");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    min-height: 250px;
+}
+
+@media screen and (min-width: 700px) {
+    .artist-photo6 {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        min-height: none;
+        width: 50%;
+    }
+}
+
+
+
+
+
+
+.artist-details {
+    padding: 2.1875em 5%;
+    margin-top: 100px;
+}
+
+@media screen and (min-width: 700px) {
+    .artist-details {
+        width: 50%;
+    }
+}
+
+.artist-details h1,
+.artist-details h4 {
+    color: #fff;
+    font-weight: 500;
+    margin: 0;
+}
+
+.artist-details h1 {
+    font-size: 125%;
+    line-height: 1;
+    margin-bottom: 0.35em;
+}
+
+.artist-details h4 {
+    font-size: 62.5%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.artist-genre {
+    color: #b9bcbd;
+    display: block;
+    font-size: 62.5%;
+    text-transform: uppercase;
+    padding-bottom: 1.375em;
+}
+
+.artist-genre a {
+    color: #e37544;
+}
+
+.music-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.375em;
+    margin-top: 1.375em;
+}
+
+.music-meta .album,
+.music-meta .song {
+    width: 48.75%;
+}
+
+.music-meta .album ul,
+.music-meta .song ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 87.5%;
+}
+
+.social-links ul {
+    list-style-type: none;
+    margin-left: 60px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 87.5%;
+    margin-top: 0.35em;
+    text-transform: lowercase;
+}
+
+.social-links li {
+    margin: 0 0.35em 0.35em 0;
+}
+
+.social-links a {
+    background-color: #191e20;
+    border-radius: 50px;
+    color: #fff;
+    display: block;
+    padding: 0.3125em 1.25em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+    color: #e37544;
+}
+
+
+.contenido-cajas {
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+
+}
+
+@media (max-width: 1400px) {
+    .artist-card {
+        width: 70%;
+        height: 530px;
+        
+    }
+    .artist-details {
+        margin-top: 7px;
+    }
+    .social-links ul {
+        margin-left: 75px;
+       
+    }
+    .fondo-artistes {
+        
+        top: 110px;
+        
+    }
+}
