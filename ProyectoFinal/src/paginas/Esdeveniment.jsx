@@ -158,7 +158,7 @@ function Esdeveniment() {
             </div>
 
             <div class="info-wrap">
-              <a href={esdeveniment.stripe} taget='_blank' class="btn"><span class="icon">🛒</span> Comprar Entrades</a>
+              <a href={esdeveniment.stripe} target='_blank' class="btn"><span class="icon">🛒</span> Comprar Entrades</a>
             </div>
             <div class="img-wrap">
 
