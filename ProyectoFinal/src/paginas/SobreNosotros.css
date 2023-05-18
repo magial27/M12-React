@@ -8,8 +8,101 @@
     background-position: center center;
     top: 130px;
     height: auto;
-    min-height: 86.3vh;
+    min-height: 40.3vh;
     width: 100%;
     position: absolute;
     z-index: 0;
 }
+
+.titulo-nosotros {
+    color: white;
+    margin-top: 130px;
+    font-size: 80px;
+    -webkit-text-stroke: 2px black;
+    font-family: 'Proxima Nova';
+    font-weight: bold;
+
+}
+
+.fondo-nosaltres-total {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.img-nosaltres{
+    width: 600px;
+    height: 400px;
+    margin: 40px;
+    border: 2px solid white;
+}
+
+.caja-contingut-nosaltres{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.caja-texto-nosaltres{
+    width: 60%;
+    border: 2px solid white;
+    height: 30%;
+    margin-top: 60px;
+}
+
+.text-nosaltres{
+    color: white;
+    padding: 20px;
+    font-size: 17px;
+
+}
+
+@media (max-width: 1400px) {
+    .img-nosaltres{
+        width: 370px;
+        height: 200px;
+        margin: 20px;
+        border: 2px solid white;
+    }
+    .caja-contingut-nosaltres{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caja-texto-nosaltres{
+        width: 90%;
+        border: 2px solid white;
+        height: 30%;
+        margin-top: 0;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .text-nosaltres{
+        color: white;
+        padding: 20px;
+    
+    }
+    .fondo-nosaltres {
+        top: 110px;
+        
+    }
+    .titulo-nosotros {
+        margin-top: 80px;
+        font-size: 80px;
+        -webkit-text-stroke: 2px black;
+        font-family: 'Proxima Nova';
+        font-weight: bold;
+    
+    }
+
+
+}
+

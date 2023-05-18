@@ -20,6 +20,7 @@ import "@stripe/stripe-js";
 
 import { UserContext } from "./userContext";
 import SobreNosotros from './paginas/SobreNosotros'
+import Contact from './paginas/Contact'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -53,6 +54,7 @@ function App() {
         <Route path="/esdeveniments/:id" element={ <><Header/><Esdeveniment /></> } /> 
         <Route path="/artistes" element={ <><Header/><Artista /></> } /> 
         <Route path="/nosaltres" element={ <><Header/><SobreNosotros /></> } /> 
+        <Route path="/contacta" element={ <><Header/><Contact /></> } /> 
 
 
         {/* <Route path="/checkout" element={<Checkout />} />
