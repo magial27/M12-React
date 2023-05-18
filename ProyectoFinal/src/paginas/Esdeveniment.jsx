@@ -107,7 +107,37 @@ function Esdeveniment() {
     },
     {
       url: "https://audioplayer.madza.dev/Madza-Persistence.mp3",
-      title: "Madza - Persistence",
+      title: "Persistence",
+      tags: ["dubstep"],
+    },
+    {
+      url: "https://audioplayer.madza.dev/Madza-Late_Night_Drive.mp3",
+      title: "Late Night Drive",
+      tags: ["dnb"],
+    },
+    {
+      url: "https://audioplayer.madza.dev/Madza-Persistence.mp3",
+      title: "Ismael",
+      tags: ["dubstep"],
+    },
+    {
+      url: "https://audioplayer.madza.dev/Madza-Late_Night_Drive.mp3",
+      title: "Isma",
+      tags: ["dnb"],
+    },
+    {
+      url: "https://audioplayer.madza.dev/Madza-Persistence.mp3",
+      title: "LLL",
+      tags: ["dubstep"],
+    },
+    {
+      url: "https://audioplayer.madza.dev/Madza-Late_Night_Drive.mp3",
+      title: "ES",
+      tags: ["dnb"],
+    },
+    {
+      url: "https://audioplayer.madza.dev/Madza-Persistence.mp3",
+      title: "MMMMM",
       tags: ["dubstep"],
     },
   ];
