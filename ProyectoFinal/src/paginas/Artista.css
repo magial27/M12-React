@@ -274,6 +274,11 @@ p {
 
 }
 
+.titulo-artista{
+    margin-top: 25px;
+    font-family: 'Proxima Nova';
+}
+
 @media (max-width: 1400px) {
     .artist-card {
         width: 70%;
