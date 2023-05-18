@@ -84,7 +84,7 @@ export const Header = () => {
                                 <Link className='titulo-link' to='/artistes'>Artistes</Link>
                             </li>
                             <li>
-                                <Link className='titulo-link' to='/nosotros'>Sobre nosaltres</Link>
+                                <Link className='titulo-link' to='/nosaltres'>Sobre nosaltres</Link>
                             </li>
                             <li>
                                 <Link className='titulo-link' to='/contacta'>Contacta</Link>

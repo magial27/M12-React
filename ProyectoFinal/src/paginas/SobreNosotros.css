@@ -1,0 +1,15 @@
+.fondo-nosaltres {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.199), rgba(26, 24, 25, 0.432)),
+        url('../../fotos/festival8.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    top: 130px;
+    height: auto;
+    min-height: 86.3vh;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}

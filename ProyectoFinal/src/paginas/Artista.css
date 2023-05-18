@@ -171,14 +171,9 @@ p {
     }
 }
 
-
-
-
-
-
 .artist-details {
     padding: 2.1875em 5%;
-    margin-top: 100px;
+    margin-top: 5%;
 }
 
 @media screen and (min-width: 700px) {

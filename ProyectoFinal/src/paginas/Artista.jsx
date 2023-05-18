@@ -42,6 +42,7 @@ function Artista() {
     return (
         <>
             <div className="fondo-artistes">
+                <h1 className="titulo-artista">Artistes més importants</h1>
                 <div className="contenido-cajas">
                     <div class="artist-card">
                         <div class="artist-photo1"></div>
@@ -228,9 +229,7 @@ function Artista() {
                                 </ul>
                             </div>
                         </div>
-                    </div>
-
-                    
+                    </div>                   
                 </div>
             </div>
         </>

@@ -17,6 +17,7 @@ import Success from "./components/Success";
 import Cancel from "./components/Cancel";
 
 import { UserContext } from "./userContext";
+import SobreNosotros from './paginas/SobreNosotros'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -41,6 +42,7 @@ function App() {
         <Route path="/register" element={ <><Header/><Register /></> } /> 
         <Route path="/esdeveniments/:id" element={ <><Header/><Esdeveniment /></> } /> 
         <Route path="/artistes" element={ <><Header/><Artista /></> } /> 
+        <Route path="/nosaltres" element={ <><Header/><SobreNosotros /></> } /> 
 
 
         <Route path="/checkout" element={<Checkout />} />
