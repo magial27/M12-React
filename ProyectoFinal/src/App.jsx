@@ -16,6 +16,8 @@ import "@stripe/stripe-js";
 import { UserContext } from "./userContext";
 import SobreNosotros from './paginas/SobreNosotros'
 import Contact from './paginas/Contact'
+import Canciones from './paginas/Canciones'
+
 import { NotFound } from './components/aplicacio/NotFound'
 
 function App() {
@@ -41,6 +43,8 @@ function App() {
 
           <Route path="/esdeveniments/:id" element={<><Header /><Esdeveniment /></>} />
           <Route path="/artistes" element={<><Header /><Artista /></>} />
+          <Route path="/canciones" element={<><Header /><Canciones /></>} />
+
           <Route path="/nosaltres" element={<><Header /><SobreNosotros /></>} />
           <Route path="/contacta" element={<><Header /><Contact /></>} />
 
