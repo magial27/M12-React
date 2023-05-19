@@ -1,0 +1,45 @@
+.fondo-canciones {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.445), rgb(107, 107, 107)),
+        url('../../fotos/festival9.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    top: 130px;
+    height: auto;
+    min-height: 86.3vh;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+
+}
+
+.reproductor {
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 8%;
+}
+
+.titulo-canciones{
+    margin-top: 10px;
+    font-family: 'Proxima Nova';
+
+}
+
+@media (max-width: 1400px) {
+    .fondo-canciones {
+        top: 110px;
+        min-height: 950px;        
+    }
+
+    .reproductor {
+        width: 85%;
+        position: absolute;
+        left: 8%;
+        top: 15%;
+    }
+
+
+}
