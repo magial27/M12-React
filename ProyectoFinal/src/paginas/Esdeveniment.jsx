@@ -93,66 +93,66 @@ function Esdeveniment() {
   }, [esdeveniment.filepath]);
 
   const tracks = [
+
     {
-      url: "https://audioplayer.madza.dev/Madza-Chords_of_Life.mp3",
-      title: "Madza - Chords of Life",
-      tags: ["house"],
+      url: "https://dl.dropboxusercontent.com/s/oazrig6nvtsxed0/onlymp3.to%20-%20Avicii%20-%20Levels-_ovdm2yX4MA-256k-1654109259131.mp3?raw=1",
+      title: "Avicii - Levels",
+      tags: [""],
     },
     {
-      url: "https://audioplayer.madza.dev/Madza-Late_Night_Drive.mp3",
-      title: "Madza - Late Night Drive",
-      tags: ["dnb"],
+      url: "https://dl.dropboxusercontent.com/s/tg2mkfmm7ysygv4/onlymp3.to%20-%20Avicii%20-%20Wake%20Me%20Up%20%28Official%20Video%29-IcrbM1l_BoI-256k-1655618485900.mp3?raw=1",
+      title: "Avicii - Wake Me Up ",
+      tags: [""],
     },
     {
-      url: "https://audioplayer.madza.dev/Madza-Persistence.mp3",
-      title: "Persistence",
-      tags: ["dubstep"],
+      url: "https://dl.dropboxusercontent.com/s/c6oxj3pxqduhdol/onlymp3.to%20-%20Boris%20Brejcha%20-%20Gravity%20feat.%20Laura%20Korinth%20%28Visualizer%20Video%29%20%5BUltra%20Music%5D-TAxXRmwA40o-256k-1656962620793.mp3?raw=1",
+      title: "Boris Brejcha - Gravity",
+      tags: [""],
     },
     {
-      url: "https://audioplayer.madza.dev/Madza-Late_Night_Drive.mp3",
-      title: "Late Night Drive",
-      tags: ["dnb"],
+      url: "https://dl.dropboxusercontent.com/s/p00lzpwtvtmuudr/onlymp3.to%20-%20Calypso%20%28Original%20Mix%29-OhWqfZPrQ9c-256k-1654371767255.mp3?raw=1",
+      title: "Carl Cox - Calypso",
+      tags: [""],
     },
     {
-      url: "https://audioplayer.madza.dev/Madza-Persistence.mp3",
-      title: "Ismael",
-      tags: ["dubstep"],
+      url: "https://dl.dropboxusercontent.com/s/ysm7f5y3bcsb1eu/onlymp3.to%20-%20Chris%20Stussy%20%20%20All%20day%20All%20night%20Unreleased-qk44UUMfwCc-256k-1656536577654.mp3?raw=1",
+      title: "Chris Stussy - All the day",
+      tags: [""],
     },
     {
-      url: "https://audioplayer.madza.dev/Madza-Late_Night_Drive.mp3",
-      title: "Isma",
-      tags: ["dnb"],
+      url: "https://dl.dropboxusercontent.com/s/6takp8168ke7qia/onlymp3.to%20-%20Chris%20Stussy%20-%20Flow%20Distinction%20%28RB194%29-f0K1tKcJfKg-256k-1660323115111.mp3?raw=1",
+      title: "Chris Stussy - Flow Distinction",
+      tags: [""],
     },
     {
-      url: "https://audioplayer.madza.dev/Madza-Persistence.mp3",
-      title: "LLL",
-      tags: ["dubstep"],
+      url: "https://dl.dropboxusercontent.com/s/cgnjr4hcerm8as2/onlymp3.to%20-%20Conducta%20%26%20Sammy%20Virji%20-%20Whippet-1NXmpUrp5W8-256k-1657155625207.mp3?raw=1",
+      title: "Conducta & Sammy Virgil - Whippet",
+      tags: [""],
     },
     {
-      url: "https://audioplayer.madza.dev/Madza-Late_Night_Drive.mp3",
-      title: "ES",
-      tags: ["dnb"],
+      url: "https://dl.dropboxusercontent.com/s/cbgq6weamwbnxmf/onlymp3.to%20-%20David%20Guetta%20Feat.%20Kid%20Cudi%20-%20Memories%20%28Official%20Video%29-NUVCQXMUVnI-256k-1656618165052.mp3?raw=1",
+      title: "David Guetta - Memories",
+      tags: [""],
     },
-    {
-      url: "https://audioplayer.madza.dev/Madza-Persistence.mp3",
-      title: "MMMMM",
-      tags: ["dubstep"],
-    },
+
   ];
   const colors = `html {
         --playerBackground: #ffa400;
         --titleColor: #ffffff; 
         --timeColor: #ffffff;
         --progressSlider: #080042;
-        --progressUsed: #000000;
+        --progressUsed: #ffffff;
         --progressLeft: #ffffff;
         --volumeSlider: #080042;
-        --volumeUsed: #000000;
+        --volumeUsed: #ffffff;
         --volumeLeft:  #ffffff;
         --playlistBackground: #ffa400;
         --playlistText: #000000;
         --playlistBackgroundHoverActive:  #18191f;
         --playlistTextHoverActive: #ffffff;
+        --searchBackground: #18191f;
+        --searchText: #ffffff;
+        --searchPlaceHolder: #ffffff;
     }`;
 
 
@@ -188,35 +188,30 @@ function Esdeveniment() {
             <div class="info-wrap">
               <a href={esdeveniment.stripe} target='_blank' class="btn"><span class="icon">🛒</span> Comprar Entrades</a>
             </div>
-            <div class="img-wrap">
 
 
               {imageExists ? (
-                <img src={esdeveniment.filepath} alt="Event" />
+                <img className="imagen-show"src={esdeveniment.filepath} alt="Event" />
               ) : (
-                <img
+                <img className="imagen-show"
                   src="https://ined21.com/wp-content/uploads/2020/11/Eventos-musicales.jpg"
                   alt="Alternative Event"
                 />
               )}
-
-
-            </div>
-
           </div>
         </div>
         <div className="segunda-parte">
-          <h1>Llista reprodcucció - {artist.name}</h1>
+          <h1>Llista reprodcucció de les cançons més escoltades</h1>
           <br></br>
-          <div className="reproductor">
-            <Player
-              trackList={tracks}
-              includeTags={false}
-              includeSearch={false}
-              showPlaylist={true}
-              autoPlayNextTrack={true}
-              customColorScheme={colors}
-            />
+          <div className="jordi">
+          <Player className="reproductor"
+            trackList={tracks}
+            includeTags={false}
+            includeSearch={true}
+            showPlaylist={true}
+            autoPlayNextTrack={true}
+            customColorScheme={colors}
+          />
           </div>
         </div>
       </div>

@@ -55,12 +55,14 @@ function Login() {
                             <h1 className="titulo-login">Inicia Sessió</h1>
                             <input
                                 type="email"
+                                id="miCampo"
                                 placeholder="Email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                             />
                             <input
                                 type="password"
+                                id="miCampo"
                                 placeholder="Password"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}

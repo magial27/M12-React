@@ -52,30 +52,35 @@ function Register() {
                             <h1 className="titulo-login">Registra't</h1>
                             <input
                                 type="text"
+                                id="miCampo"
                                 placeholder="Name"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                             />
                             <input
                                 type="email"
+                                id="miCampo"
                                 placeholder="Email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                             />
                             <input
                                 type="password"
+                                id="miCampo"
                                 placeholder="Password"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                             />
                             <input
                                 type="text"
+                                id="miCampo"
                                 placeholder="DNI"
                                 value={dni}
                                 onChange={(e) => setDni(e.target.value)}
                             />
                             <input
                                 type="text"
+                                id="miCampo"
                                 placeholder="Telefón"
                                 value={telephone}
                                 onChange={(e) => setTelephone(e.target.value)}

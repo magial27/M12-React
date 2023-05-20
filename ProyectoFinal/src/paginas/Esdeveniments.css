@@ -306,7 +306,7 @@
     .event-item-meta-data {
         font-size: 20px;
         position: absolute;
-        top: 15%;
+        top: 20%;
         right: 30px;
         margin-bottom: 10px;
     }
@@ -316,7 +316,7 @@
         transform: none;
         display: flex;
         flex-direction: row;
-        margin-top: 20px;
+        margin-top: 40px;
         margin-left: 10px;
     }
     .m-eventList .m-eventItem__buttons a.tickets+.more {
