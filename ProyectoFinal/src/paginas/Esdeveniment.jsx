@@ -26,7 +26,7 @@ function Esdeveniment() {
   const getEvents = async (e) => {
     try {
 
-      const data = await fetch("http://127.0.0.1:8000/api/events/" + id, {
+      const data = await fetch("http://equip12.insjoaquimmir.cat/api/events/" + id, {
         headers: {
           "Accept": "application/json",
           "Content-Type": "application/json",
@@ -54,7 +54,7 @@ function Esdeveniment() {
 
   const getArtists = async (e) => {
     try {
-      const data = await fetch("http://127.0.0.1:8000/api/artists/" + artistId, {
+      const data = await fetch("http://equip12.insjoaquimmir.cat/api/artists/" + artistId, {
         headers: {
           "Accept": "application/json",
           "Content-Type": "application/json",

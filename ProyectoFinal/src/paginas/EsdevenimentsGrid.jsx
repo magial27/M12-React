@@ -46,7 +46,7 @@ function EsdevenimentsGrid() {
 
   const getEvents = async () => {
     try {
-      const data = await fetch("http://127.0.0.1:8000/api/events", {
+      const data = await fetch("http://equip12.insjoaquimmir.cat/api/events", {
         headers: {
           "Accept": "application/json",
           "Content-Type": "application/json",

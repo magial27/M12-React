@@ -21,7 +21,7 @@ function UserForm() {
 
     useEffect(() => {
       
-        fetch ("http://127.0.0.1:8000/api/user/",{
+        fetch ("http://equip12.insjoaquimmir.cat/api/user/",{
         
         headers: {
            'Accept': 'application/json',
@@ -61,7 +61,7 @@ function UserForm() {
         e.preventDefault();
 
         try {
-            const response = await fetch('http://127.0.0.1:8000/api/users/' + idUser, {
+            const response = await fetch('http://equip12.insjoaquimmir.cat/api/users/' + idUser, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
