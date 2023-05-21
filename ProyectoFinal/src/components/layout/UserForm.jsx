@@ -105,6 +105,7 @@ function UserForm() {
                                 placeholder="Name"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
+                                required
                             />
                             <input
                                 type="email"
@@ -112,6 +113,7 @@ function UserForm() {
                                 placeholder="Email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
+                                required
                             />
                             <input
                                 type="password"
@@ -119,6 +121,7 @@ function UserForm() {
                                 placeholder="Password"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
+                                required
                             />
                             <input
                                 type="text"
@@ -126,6 +129,7 @@ function UserForm() {
                                 placeholder="DNI"
                                 value={dni}
                                 onChange={(e) => setDni(e.target.value)}
+                                required
                             />
                             <input
                                 type="text"
@@ -133,6 +137,7 @@ function UserForm() {
                                 placeholder="Telefón"
                                 value={telephone}
                                 onChange={(e) => setTelephone(e.target.value)}
+                                required
                             />
 
                             <button className="boto">Modificar</button>

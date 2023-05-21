@@ -59,6 +59,7 @@ function Login() {
                                 placeholder="Email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
+                                required
                             />
                             <input
                                 type="password"
@@ -66,6 +67,7 @@ function Login() {
                                 placeholder="Password"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
+                                required
                             />
                             <button className="boto">Iniciar Sessió</button>
                             <div className="desaparecer">
