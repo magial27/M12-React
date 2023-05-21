@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.199), rgba(26, 24, 25, 0.432)),
-        url('../../fotos/festival5.jpg');
+        url('../../assets/festival5.jpg');
     background-repeat: repeat;
     background-size: cover;
     background-position: center center;

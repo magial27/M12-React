@@ -50,7 +50,7 @@
 	z-index: 0;
 	height: 1000px;
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.52), rgba(26, 24, 25, 0.73)),
-		url('../../fotos/festival4.jpg');
+		url('../../assets/festival4.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -166,11 +166,11 @@ body {
 }
 
 .carta:nth-child(1):before {
-	background-image: url('../fotos/festival3.jpeg');
+	background-image: url('../assets/festival3.jpeg');
 }
 
 .carta:nth-child(2):before {
-	background-image: url('../fotos/festival2.png');
+	background-image: url('../assets/festival2.png');
 }
 
 

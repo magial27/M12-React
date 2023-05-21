@@ -13,7 +13,7 @@ export const Home = (esdeveniment) => {
         <>
             <div className="home">
                 <div className="caja-inicio">
-                    <video src="../fotos/video_home.mp4" class="video-home" autoplay="true" muted="true" loop="true"></video>
+                    <video src="../assets/video_home.mp4" class="video-home" autoplay="true" muted="true" loop="true"></video>
                     <div className="div_titulo">
                         <h1 className="titulo_caja">Bienvinguts a MusicTix</h1>
                         <p className="texto_caja">Benvingut a la nostra aplicació web de venda d'entrades
