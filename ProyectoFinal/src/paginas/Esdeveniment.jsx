@@ -1,13 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom';
 import './Esdeveniment.css'
 import Player from "@madzadev/audio-player";
 import "@madzadev/audio-player/dist/index.css";
+import { UserContext } from '../userContext';
 
 function Esdeveniment() {
 
   const [imageExists, setImageExists] = useState(false);
+
+  const authToken = localStorage.getItem('authToken'); // Verificamos si el usuario está autenticado
+
 
   function checkImageExists(imageUrl) {
     return new Promise((resolve, reject) => {
@@ -184,11 +188,21 @@ function Esdeveniment() {
                 </div>
               </div>
             </div>
+                        {authToken && (
+              <div class="info-wrap">
+                <a href={esdeveniment.stripe} target='_blank' class="btn">
+                  <span class="icon">🛒</span> Comprar Entrades
+                </a>
+              </div>
+            )}
 
-            <div class="info-wrap">
-              <a href={esdeveniment.stripe} target='_blank' class="btn"><span class="icon">🛒</span> Comprar Entrades</a>
-            </div>
-
+            {!authToken && (
+              <div class="info-wrap">
+                <a href="/login" class="btn">
+                  <span class="icon">🛒</span> Comprar Entrades
+                </a>
+              </div>
+            )}
 
               {imageExists ? (
                 <img className="imagen-show"src={esdeveniment.filepath} alt="Event" />

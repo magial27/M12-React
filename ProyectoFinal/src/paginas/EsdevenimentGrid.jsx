@@ -6,6 +6,7 @@ function EsdevenimentGrid({ esdeveniment }) {
 
   const [imageExists, setImageExists] = useState(false);
 
+  const authToken = localStorage.getItem('authToken'); // Verificamos si el usuario está autenticado
 
 
   function checkImageExists(imageUrl) {
@@ -59,6 +60,22 @@ function EsdevenimentGrid({ esdeveniment }) {
 
               <a target="_blank" href={esdeveniment.stripe} class="tickets onsalenow ">Buy Tickets</a><Link class="more m-eventItem__buttons-hide" to={"/esdeveniments/" + esdeveniment.id}>More Info</Link>
             </div>
+
+
+
+            {authToken && (
+              <div class="m-eventItem__buttons show-list">
+
+              <a target="_blank" href={esdeveniment.stripe} class="tickets onsalenow ">Buy Tickets</a><Link class="more m-eventItem__buttons-hide" to={"/esdeveniments/" + esdeveniment.id}>More Info</Link>
+            </div>
+            )}
+
+            {!authToken && (
+              <div class="m-eventItem__buttons show-list">
+
+              <a href="/login" class="tickets onsalenow ">Buy Tickets</a><Link class="more m-eventItem__buttons-hide" to={"/esdeveniments/" + esdeveniment.id}>More Info</Link>
+            </div>
+            )}
           </div>
 
         </div>
