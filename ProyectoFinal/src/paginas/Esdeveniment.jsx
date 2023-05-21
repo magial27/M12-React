@@ -198,9 +198,9 @@ function Esdeveniment() {
 
             {!authToken && (
               <div class="info-wrap">
-                <a href="/login" class="btn">
+                <Link to="/login" class="btn">
                   <span class="icon">🛒</span> Comprar Entrades
-                </a>
+                </Link>
               </div>
             )}
 

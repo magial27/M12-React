@@ -73,7 +73,7 @@ function EsdevenimentGrid({ esdeveniment }) {
             {!authToken && (
               <div class="m-eventItem__buttons show-list">
 
-              <a href="/login" class="tickets onsalenow ">Buy Tickets</a><Link class="more m-eventItem__buttons-hide" to={"/esdeveniments/" + esdeveniment.id}>More Info</Link>
+              <Link to="/login" class="tickets onsalenow ">Buy Tickets</Link><Link class="more m-eventItem__buttons-hide" to={"/esdeveniments/" + esdeveniment.id}>More Info</Link>
             </div>
             )}
           </div>
