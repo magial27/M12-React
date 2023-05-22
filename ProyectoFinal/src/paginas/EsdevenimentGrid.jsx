@@ -56,10 +56,10 @@ function EsdevenimentGrid({ esdeveniment }) {
             </div>
             <div class="event-item-meta-data"> {esdeveniment.location} </div>
 
-            <div class="m-eventItem__buttons show-list">
+            {/* <div class="m-eventItem__buttons show-list">
 
               <a target="_blank" href={esdeveniment.stripe} class="tickets onsalenow ">Buy Tickets</a><Link class="more m-eventItem__buttons-hide" to={"/esdeveniments/" + esdeveniment.id}>More Info</Link>
-            </div>
+            </div> */}
 
 
 

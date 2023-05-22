@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.199), rgba(26, 24, 25, 0.432)),
-        url('../../assets/festival7.jpg');
+        url('https://dl.dropboxusercontent.com/s/k1pf9e8frfkzhjb/festival7.jpg?dl=0');
     background-repeat: repeat;
     background-size: cover;
     background-position: center center;
@@ -289,7 +289,7 @@ p {
         margin-top: 7px;
     }
     .social-links ul {
-        margin-left: 75px;
+        margin-left: 50px;
        
     }
     .fondo-artistes {

@@ -9,7 +9,7 @@ function SobreNosotros() {
             </div>
             <div className="fondo-nosaltres-total">
                 <div className="caja-contingut-nosaltres">
-                    <img className="img-nosaltres" src="../../assets/nosotros.jpg" alt="" />
+                    <img className="img-nosaltres" src="https://dl.dropboxusercontent.com/s/k33sc8pq1tosnn3/fest.jpeg?dl=0" alt="" />
                     <div className="caja-texto-nosaltres">
                         <p className="text-nosaltres">Des de la nostra pàgina, ens dediquem a la venda de tickets per a una gran varietat d'esdeveniments.
                             Ja siguin concerts, espectacles de teatre, esdeveniments esportius o festivals, estem aquí
