@@ -32,7 +32,7 @@ function EsdevenimentGrid({ esdeveniment }) {
         <div class="m-eventList__wrapper list" id="list">
           <div class="m-eventItem featured clearfix">
             <div className="m-eventItem__thumb thumb">
-              <a href={`/esdeveniments/${esdeveniment.id}`} title="More Info">
+              <Link to={`/esdeveniments/${esdeveniment.id}`} title="More Info">
                 {imageExists ? (
                   <img src={esdeveniment.filepath} alt="Event" />
                 ) : (
@@ -41,7 +41,7 @@ function EsdevenimentGrid({ esdeveniment }) {
                     alt="Alternative Event"
                   />
                 )}
-              </a>
+              </Link>
             </div>
 
 
@@ -50,7 +50,7 @@ function EsdevenimentGrid({ esdeveniment }) {
                 <span class="m-date__rangeFirst"><span class="m-date__month">{esdeveniment.start_date} - {esdeveniment.end_date}</span></span>
               </div>
               <h3 class="m-eventItem__title m-eventItem__title-withTagline">
-                <a href={`/esdeveniments/${esdeveniment.id}`} title="More Info">{esdeveniment.name}</a>
+                <Link to={`/esdeveniments/${esdeveniment.id}`} title="More Info">{esdeveniment.name}</Link>
               </h3>
               <h4 class="m-eventItem__tagline"> Aforament : {esdeveniment.capacity}</h4>
             </div>
